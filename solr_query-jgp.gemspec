@@ -1,14 +1,14 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{solr_query}
-  s.version = "1.0.3"
+  s.name = %q{solr_query-jgp}
+  s.version = "1.1.3"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
-  s.authors = ["Matthew Rudy Jacobs"]
+  s.authors = ["Matthew Rudy Jacobs", "Mark Woods", "Tom Stuart"]
   s.date = %q{2011-05-18}
   s.description = %q{Build SOLR queries, properly escaped, with a nice API}
-  s.email = %q{matthewrudyjacobs@gmail.com}
+  s.email = %q{development@jobsgopublic.com}
   s.extra_rdoc_files = ["README"]
   s.files = ["MIT-LICENSE", "Rakefile", "README", "spec", "lib/solr_query.rb"]
   s.homepage = %q{http://github.com/matthewrudy/solr_query}

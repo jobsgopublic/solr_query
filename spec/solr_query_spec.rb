@@ -80,8 +80,7 @@ describe SolrQuery do
       @it.build(:nilly => nil, :nully => nil, :keyword => nil).should == ""
     end
 
-    # this is a magical set of specs, that may be fragile - so we'll do a less magic version in a mo
-    SolrQuery::SOLR_ESCAPE_CHARACTERS.each do |char|
+    %w{+ - && || ! ( ) \{ \} [ ] ^ " ~ * ? : \\}.each do |char|
       it "should escape any #{char}" do
         @it.build(:keyword => "#{char} yeah#{char} #{char}   ", :something => "a #{char}ey#{char}").should == "\\#{char} yeah\\#{char} \\#{char} AND something:(a \\#{char}ey\\#{char})"
       end
